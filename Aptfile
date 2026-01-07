@@ -1,0 +1,6 @@
+curl
+libjemalloc2
+libvips
+pkg-config
+libffi-dev
+unzip
