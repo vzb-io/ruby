@@ -1,5 +1,5 @@
 # Base image
-FROM ruby:4.0.2-slim-trixie
+FROM ruby:4.0.3-slim-trixie
 
 COPY Aptfile ./Aptfile
 RUN apt-get update -qq && \
@@ -13,7 +13,7 @@ RUN JEMALLOC=$(find /usr/lib -name "libjemalloc.so.2" | head -1) && \
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
 
 # Install Bun
-ARG BUN_VERSION=1.3.11
+ARG BUN_VERSION=1.3.13
 ENV BUN_INSTALL="$HOME/.bun"
 ENV PATH="$BUN_INSTALL/bin:$PATH"
 RUN curl -fsSL https://bun.sh/install | bash -s -- "bun-v${BUN_VERSION}"

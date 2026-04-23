@@ -4,9 +4,9 @@ Optimized Ruby Docker image with jemalloc memory allocator and common dependenci
 
 ## What's Included
 
-- Ruby 4.0.2 (slim-trixie)
+- Ruby 4.0.3 (slim-trixie)
 - jemalloc (enabled via LD_PRELOAD)
-- Bun 1.3.11
+- Bun 1.3.13
 - System packages from [Aptfile](Aptfile)
 
 ## Usage
